@@ -4,7 +4,7 @@ WORKDIR /app
 COPY ./package.json /app/
 RUN yarn --silent
 COPY . /app
-RUN yarn build:staging
+RUN yarn build:prod
 
 # stage 2 - build the final image and copy the react build files
 
